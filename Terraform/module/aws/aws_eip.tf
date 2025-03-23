@@ -4,6 +4,6 @@ resource "aws_eip" "mcking_nat_eip" {
   tags = {
     Name = "mcking-nat-eip"
   }
-  
+
   depends_on = [aws_internet_gateway.mcking_internet_gateway]
 }
