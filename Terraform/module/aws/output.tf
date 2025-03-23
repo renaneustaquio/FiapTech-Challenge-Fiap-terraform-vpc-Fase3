@@ -23,3 +23,7 @@ output "mcking_security_group" {
 output "mckingapi_lb" {
   value = aws_lb.mckingapi_lb.dns_name
 }
+
+output "lambda_arn" {
+  value = aws_lambda_function.mckingapi_lambda.arn
+}
