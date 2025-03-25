@@ -1,6 +1,12 @@
 # 9SOAT-G63-MC-KING
 ## Tech Challenge FIAP - 9SOAT - Grupo 63
 
+## Pipeline Status
+
+[![Build](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/build.yml/badge.svg)](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/build.yml)
+
+[![Deploy](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/deploy.yml/badge.svg)](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/deploy.yml)
+
 ### Participantes:
 - **Mayara Manzi** - RM359734 
 
@@ -24,13 +30,15 @@ Dando continuidade ao desenvolvimento do software para a lanchonete, teremos as 
 
 1. **Implementação de API Gateway e Function Serverless para autenticação via CPF:**
    - Integração ao sistema de autenticação para identificar o cliente.
-2. **Implementação de CI/CD segregado por repositórios:**
-   - **1 repositório** para o Lambda.
-   - **1 repositório** para infraestrutura Kubernetes via Terraform.
-   - **1 repositório** para infraestrutura de banco de dados gerenciáveis via Terraform.
-   - **1 repositório** para a aplicação executada no Kubernetes.
+2. **Implementação de CI/CD segregado por repositórios - executar na seguinte ordem:**
+   - 🔗 **[**1 repositório**](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-terraform-vpc-Fase3)** para infraestrutura VPC via Terraform.
+   - 🔗 **[**1 repositório**](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-terraform-rds-Fase3)** para infraestrutura de banco de dados gerenciáveis via Terraform.
+   - 🔗 **[**1 repositório**](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-terraform-eks-Fase3)** para infraestrutura Kubernetes via Terraform.
+   - 🔗 **[**1 repositório**](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-lambda-Fase3)** para o Lambda.
+   - 🔗 **[**1 repositório**](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-mcking-liquibase-Fase3)** para versionamento do banco com Liquibase.
+   - 🔗 **[**1 repositório**](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-Mc_King-Fase3)** para a aplicação executada no Kubernetes.
 3. **Deploy automatizado via Actions:**
-   - As branches `main/master` serão protegidas.
+   - As branches `master` serão protegidas.
    - Os commits diretos serão bloqueados, exigindo o uso de Pull Requests.
 4. **Melhoria da estrutura do banco de dados:**
    - Documentação seguindo padrões de modelagem de dados.
@@ -40,16 +48,16 @@ Dando continuidade ao desenvolvimento do software para a lanchonete, teremos as 
    - **Banco de dados gerenciáveis:** AWS RDS, Banco de Dados do Azure ou Cloud SQL no GCP.
    - **Sistema de autenticação:** AWS Cognito, Microsoft AD ou Google Identity Platform.
 
-## Tecnologias Utilizadas
+## Principais Tecnologias Utilizadas
 - **Visual Studio 2022**
 - **.NET - 8.0**
 - **Postgres - 16.4**
 - **AWS EKS**
 - **AWS RDS**
 - **AWS VPC**
-- **AWS Transit Gateway**
-- **AWS DynamoDB**
 - **AWS Secrets Manager**
+- **Cognito**
+- **Liquibase**
 
 ## Guia de Setup do Projeto Terraform Local
 Este guia descreve o processo de configuração do ambiente para rodar o projeto localmente utilizando Terraform.
@@ -90,9 +98,4 @@ terraform plan
 terraform apply
 ```
 
-## Pipeline Status
-
-[![Build](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/build.yml/badge.svg)](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/build.yml)
-
-[![Deploy](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/deploy.yml/badge.svg)](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/deploy.yml)
 
