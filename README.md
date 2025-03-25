@@ -3,9 +3,9 @@
 
 ## Pipeline Status
 
-[![Build](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/build.yml/badge.svg)](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/build.yml)
+[![Build](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-terraform-vpc-Fase3/actions/workflows/build.yml/badge.svg)](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-terraform-vpc-Fase3/actions/workflows/build.yml)
 
-[![Deploy](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/deploy.yml/badge.svg)](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3/actions/workflows/deploy.yml)
+[![Deploy](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-terraform-vpc-Fase3/actions/workflows/deploy.yml/badge.svg)](https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-terraform-vpc-Fase3/actions/workflows/deploy.yml)
 
 ### Participantes:
 - **Mayara Manzi** - RM359734 
