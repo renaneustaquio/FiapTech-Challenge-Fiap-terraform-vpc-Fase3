@@ -66,7 +66,7 @@ Este guia descreve o processo de configuração do ambiente para rodar o projeto
 Clone o repositório do projeto para sua máquina local e abra um terminal na raiz do projeto.
 
 ```sh
- git clone https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-EKS-Fase3.git
+ git clone https://github.com/renaneustaquio/FiapTech-Challenge-Fiap-terraform-vpc-Fase3.git
 ```
 
 ### Configuração das Credenciais AWS
